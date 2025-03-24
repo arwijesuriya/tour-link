@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Routers from '../../router/Routers'
 import Header from './../Header/Header'
+import Routers from '../../router/Routers'
 import Footer from './../Footer/Footer'
 
 const Layout = () => {
@@ -11,7 +11,7 @@ const Layout = () => {
             <Routers />
             <Footer />
         </>
-    )
+    );
 }
 
 export default Layout
