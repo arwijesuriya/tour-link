@@ -13,6 +13,7 @@ import Subtitle from "./../shared/Subtitle";
 import SearchBar from "../shared/SearchBar";
 import ServiceList from "../services/ServiceList";
 import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
+import MasonryImageGallery from "../components/image-gallery/MasonryImageGallery";
 
 const Home = () => {
   return (
@@ -134,6 +135,24 @@ const Home = () => {
               <div className="experience__img">
                 <img src={experienceImg} alt="" />
               </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      {/* Gallery section */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12">
+              <Subtitle Subtitle={"Gallery"} />
+              <h2 className="gallery__title">
+                Explore the world through our eyes
+              </h2>
+            </Col>
+
+            <Col lg="12">
+              <MasonryImageGallery />
             </Col>
           </Row>
         </Container>
