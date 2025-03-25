@@ -5,8 +5,10 @@ import { Container, Row, Col } from "reactstrap";
 import heroImg from "../assets/images/hero-img01.jpg";
 import heroImg02 from "../assets/images/hero-img02.jpg";
 import heroVideo from "../assets/images/hero-video.mp4";
-import Subtitle from "./../shared/Subtitle";
 import worldImg from "../assets/images/world.png";
+import experienceImg from "../assets/images/experience.png";
+
+import Subtitle from "./../shared/Subtitle";
 
 import SearchBar from "../shared/SearchBar";
 import ServiceList from "../services/ServiceList";
@@ -15,7 +17,7 @@ import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
 const Home = () => {
   return (
     <>
-      {/* Hero section start */}
+      {/* Hero section */}
       <section>
         <Container>
           <Row>
@@ -60,7 +62,7 @@ const Home = () => {
         </Container>
       </section>
 
-      {/* Hero section start */}
+      {/* Services section */}
       <section>
         <Container>
           <Row>
@@ -74,21 +76,68 @@ const Home = () => {
         </Container>
       </section>
 
-      {/* Featured section start */}
+      {/* Featured section */}
+      <section>
         <Container>
           <Row>
-            <Col lg='12' className='mb-5'>
-              <Subtitle Subtitle={'Explore'} />
-              <h2 className='featured__tour-title'>
-                Discover the world's top destinations with our exclusive travel packages
+            <Col lg="12" className="mb-5">
+              <Subtitle Subtitle={"Explore"} />
+              <h2 className="featured__tour-title">
+                Discover the world's top destinations with our exclusive travel
+                packages
               </h2>
             </Col>
 
             <FeaturedTourList />
           </Row>
         </Container>
-      {/* Featured section end */}
+      </section>
 
+      {/* Experience section */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="6">
+              <div className="experience__content">
+                <Subtitle Subtitle={"Experience"} />
+                <h2>
+                  With our all experience
+                  <br />
+                  we will serve you the best
+                </h2>
+                <p>
+                  We offer a wide range of travel packages to suit your needs
+                  and preferences, ensuring that you have the best experience
+                  possible while exploring the world.
+                </p>
+              </div>
+
+              <div className="counter__wrapper d-flex align-items-center gap-5">
+                <div className="counter__box">
+                  <span>12k+</span>
+                  <h6>Successful trips</h6>
+                </div>
+
+                <div className="counter__box">
+                  <span>2k+</span>
+                  <h6>Regular clients</h6>
+                </div>
+
+                <div className="counter__box">
+                  <span>15</span>
+                  <h6>Years of experience</h6>
+                </div>
+              </div>
+            </Col>
+
+            <Col lg="6">
+              <div className="experience__img">
+                <img src={experienceImg} alt="" />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
     </>
   );
 };
