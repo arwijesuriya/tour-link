@@ -37,6 +37,8 @@ const quick__links2 = [
 ]
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
     <Footer className="footer">
       <Container>
@@ -100,6 +102,47 @@ const Footer = () => {
                 ))
               }
             </ListGroup>
+          </Col>
+
+          <Col lg="3">
+            <h5 className='footer__link-title'>Contacts</h5>
+            <ListGroup className='footer__quick-links'>
+              <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
+                <h6 className='mb-0 d-flex align-items-center gap-2'>
+                  <span><i class="ri-map-pin-line"></i></span>
+                  Address:
+                </h6>
+                <p className='mb-0'>
+                  123, Colombo, Sri Lanka
+                </p>
+              </ListGroupItem>
+
+              <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
+                <h6 className='mb-0 d-flex align-items-center gap-2'>
+                  <span><i class="ri-mail-line"></i></span>
+                  Mail to:
+                </h6>
+                <p className='mb-0'>
+                  abc@example.com
+                </p>
+              </ListGroupItem>
+
+              <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-3'>
+                <h6 className='mb-0 d-flex align-items-center gap-2'>
+                  <span><i class="ri-phone-fill"></i></span>
+                  Tel:
+                </h6>
+                <p className='mb-0'>
+                  0112345678
+                </p>
+              </ListGroupItem>
+            </ListGroup>
+          </Col>
+
+          <Col lg="12" className="text-center pt-5">
+              <p className="copyright">
+                &copy; {year} TourLink. All rights reserved.
+              </p>
           </Col>
         </Row>
       </Container>
