@@ -10,6 +10,7 @@ import worldImg from "../assets/images/world.png";
 
 import SearchBar from "../shared/SearchBar";
 import ServiceList from "../services/ServiceList";
+import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
 
 const Home = () => {
   return (
@@ -82,6 +83,8 @@ const Home = () => {
                 Discover the world's top destinations with our exclusive travel packages
               </h2>
             </Col>
+
+            <FeaturedTourList />
           </Row>
         </Container>
       {/* Featured section end */}
