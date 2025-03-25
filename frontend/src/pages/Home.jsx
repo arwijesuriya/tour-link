@@ -8,6 +8,8 @@ import heroVideo from '../assets/images/hero-video.mp4'
 import Subtitle from './../shared/Subtitle'
 import worldImg from '../assets/images/world.png'
 
+import SearchBar from '../shared/SearchBar'
+
 const Home = () => {
   return (
     <>
@@ -51,6 +53,20 @@ const Home = () => {
               </div>
             </Col>
 
+            <SearchBar />
+
+          </Row>
+        </Container>
+      </section>
+
+      {/* Hero section start */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg='3'>
+              <h5 className='services__subtitle'>What we serve</h5>
+              <h5 className='services__title'>We offer our best services</h5>
+            </Col>
           </Row>
         </Container>
       </section>
