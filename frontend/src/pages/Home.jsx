@@ -14,6 +14,7 @@ import SearchBar from "../shared/SearchBar";
 import ServiceList from "../services/ServiceList";
 import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
 import MasonryImageGallery from "../components/image-gallery/MasonryImageGallery";
+import Testimonial from "../components/Testimonial/Testimonial";
 
 const Home = () => {
   return (
@@ -84,8 +85,7 @@ const Home = () => {
             <Col lg="12" className="mb-5">
               <Subtitle Subtitle={"Explore"} />
               <h2 className="featured__tour-title">
-                Discover the world's top destinations with our exclusive travel
-                packages
+                Discover the world's top destinations with our exclusive travel packages
               </h2>
             </Col>
 
@@ -153,6 +153,24 @@ const Home = () => {
 
             <Col lg="12">
               <MasonryImageGallery />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      {/* Testimonial section */}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12">
+              <Subtitle Subtitle={"Testimonials"} />
+              <h2 className="testimonial__title">
+                What our clients say about us
+              </h2>
+            </Col>
+
+            <Col lg="12">
+              <Testimonial />
             </Col>
           </Row>
         </Container>
